@@ -4,7 +4,7 @@ from pyspark import SparkContext, SparkConf
 from pyspark.mllib.classification import SVMWithSGD, SVMModel
 from pyspark.mllib.regression import LabeledPoint
 
-conf = SparkConf().setAppName('Linear Support Vector Machiens').setMaster('local[2]')
+conf = SparkConf().setAppName('Linear Support Vector Machines').setMaster('local[2]')
 sc = SparkContext(conf=conf)
 
 # load and parse the data
