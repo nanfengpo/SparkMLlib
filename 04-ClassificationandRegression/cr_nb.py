@@ -29,3 +29,5 @@ sameModel = NaiveBayesModel.load(sc, output_dir)
 predictionAndLabel = test.map(lambda p : (sameModel.predict(p.features), p.label))
 accuracy = 1.0*predictionAndLabel.filter(lambda (v, p) : v==p).count()/test.count()
 print('sameModel accuracy :' + format(accuracy))
+
+sc.stop()
