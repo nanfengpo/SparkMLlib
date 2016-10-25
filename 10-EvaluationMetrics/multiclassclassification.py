@@ -6,7 +6,7 @@ from pyspark.mllib.evaluation import MulticlassMetrics
 from pyspark.mllib.regression import LabeledPoint
 from pyspark.mllib.util import MLUtils
 
-conf = SparkConf().setAppName('Binary Classification Evaluation').setMaster('local[2]')
+conf = SparkConf().setAppName('Multiclass Classification Evaluation').setMaster('local[2]')
 sc = SparkContext(conf=conf)
 
 # load training data
